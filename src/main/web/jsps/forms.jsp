@@ -9,15 +9,15 @@
 <div class="x-value">
     <form id="checkForm">
     <p>Выберите X:</p>
-        <label><input type="checkbox" id="cb1" value="-3">-3</label>
-        <label><input type="checkbox" id="cb2" value="-2">-2</label>
-        <label><input type="checkbox" id="cb3" value="-1">-1</label>
-        <label><input type="checkbox" id="cb4" value="0">0</label>
-        <label><input type="checkbox" id="cb5" value="1">1</label>
-        <label><input type="checkbox" id="cb6" value="2">2</label>
-        <label><input type="checkbox" id="cb7" value="3">3</label>
-        <label><input type="checkbox" id="cb8" value="4">4</label>
-        <label><input type="checkbox" id="cb9" value="5">5</label>
+        <label><input name="x_in" type="checkbox" id="cb1" value="-3">-3</label>
+        <label><input name="x_in" type="checkbox" id="cb2" value="-2">-2</label>
+        <label><input name="x_in" type="checkbox" id="cb3" value="-1">-1</label>
+        <label><input name="x_in" type="checkbox" id="cb4" value="0">0</label>
+        <label><input name="x_in" type="checkbox" id="cb5" value="1">1</label>
+        <label><input name="x_in" type="checkbox" id="cb6" value="2">2</label>
+        <label><input name="x_in" type="checkbox" id="cb7" value="3">3</label>
+        <label><input name="x_in" type="checkbox" id="cb8" value="4">4</label>
+        <label><input name="x_in" type="checkbox" id="cb9" value="5">5</label>
     </form>
 </div>
 <div class="y-value">
