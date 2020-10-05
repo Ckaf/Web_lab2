@@ -23,10 +23,10 @@
         <polygon points="300,150 295,155 295, 145" fill="#000720" stroke="#000720"></polygon>
         <polygon points="150,0 145,5 155,5" fill="#000720" stroke="#000720"></polygon>
         <!--RECTANGLE-->
-        <rect class="rectangle" x="90" y="30" width="60" height="120"></rect>
+        <rect class="rectangle" x="30" y="150" width="120" height="120"></rect>
         <!--TRIANGLE-->
-        <polygon class="triangle" points="150,150 210,150 150,90"></polygon>
-        <!--KAKAYAZHEETOHERNYA-->
+        <polygon class="triangle" points="150,150 270,150 150,90"></polygon>
+        <!--QUARTER-->
         <path class="quarter" d="M 150 270 Q 270 270 270 150 L 150 150 Z"></path>
         <!--DOT-->
         <circle id="pointer" r="5" cx="150" cy="150" fill-opacity="0.7" fill="red" stroke="firebrick"
