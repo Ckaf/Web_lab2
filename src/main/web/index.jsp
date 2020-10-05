@@ -15,5 +15,7 @@
 <div class="form-container">
     <jsp:include page="jsps/forms.jsp"/>
 </div>
+<script src="js/checkboxHandler.js"></script>
+
 </body>
 
