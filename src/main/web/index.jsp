@@ -14,8 +14,15 @@
 </div>
 <div class="form-container">
     <jsp:include page="jsps/forms.jsp"/>
+    <button id="checkButton">Проверить</button>
+    <div id="outputContainer">
+        <span class="outputStub notification">Результаты отсутствуют</span>
+    </div>
 </div>
+<script src="js/jquery.js"></script>
 <script src="js/checkboxHandler.js"></script>
+<script src="js/formValidator.js"></script>
+<script src="js/graphicValidator.js"></script>
 
 </body>
 
