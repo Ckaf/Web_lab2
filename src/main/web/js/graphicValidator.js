@@ -36,9 +36,6 @@ function clickPlotHandler(e) {
         const xValue = getXFromSVG(x, rValue);
         const yValue = getYFromSVG(y, rValue);
 
-        console.log(x, y, r)
-        console.log(xValue, yValue, rValue)
-
         let str = '?x=' + xValue + '&y=' + yValue + '&r=' + rValue;
         fetch("controller" + str, {
             method: "GET",
