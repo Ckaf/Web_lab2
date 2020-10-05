@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="hero">
+    <jsp:include page="jsps/hero.jsp"/>
+</div>
 <div class="graphic">
     <jsp:include page="jsps/graphic.jsp"/>
 </div>
