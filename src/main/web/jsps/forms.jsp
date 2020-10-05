@@ -8,15 +8,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="x-value">
     <p>Выберите X:</p>
-    <label><input type="checkbox">-3</label>
-    <label><input type="checkbox">-2</label>
-    <label><input type="checkbox">-1</label>
-    <label><input type="checkbox">0</label>
-    <label><input type="checkbox">1</label>
-    <label><input type="checkbox">2</label>
-    <label><input type="checkbox">3</label>
-    <label><input type="checkbox">4</label>
-    <label><input type="checkbox">5</label>
+    <label><input type="checkbox" value="-3">-3</label>
+    <label><input type="checkbox" value="-2">-2</label>
+    <label><input type="checkbox" value="-1">-1</label>
+    <label><input type="checkbox" value="0">0</label>
+    <label><input type="checkbox" value="1">1</label>
+    <label><input type="checkbox" value="2">2</label>
+    <label><input type="checkbox" value="3">3</label>
+    <label><input type="checkbox" value="4">4</label>
+    <label><input type="checkbox" value="5">5</label>
 </div>
 <div class="y-value">
     <p>Выберите Y:</p>
@@ -28,9 +28,9 @@
     <p>Выберите R:</p>
     <select id="r-value-select" name="r_btn">
         <option value="1">1</option>
-        <option>1.5</option>
-        <option>2</option>
-        <option>2.5</option>
-        <option>3</option>
+        <option value="1.5">1.5</option>
+        <option value="2">2</option>
+        <option value="2.5">2.5</option>
+        <option value="3">3</option>
     </select>
 </div>
