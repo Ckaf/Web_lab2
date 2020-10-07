@@ -1,7 +1,7 @@
 import java.io.Serializable;
 
 public class Object implements Serializable {
-    public static double x;
+    public double x;
     public double y;
     public double r;
     public boolean result;
@@ -11,7 +11,7 @@ public class Object implements Serializable {
     this.r=r;
     this.result=result;
     }
-    public static double getX(){
+    public  double getX(){
         return x;
     }
 
@@ -31,8 +31,8 @@ public class Object implements Serializable {
         this.y = y;
     }
 
-    public static void setX(double x) {
-        Object.x = x;
+    public  void setX(double x) {
+        this.x = x;
     }
 
     public void setR(double r) {
