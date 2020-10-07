@@ -28,7 +28,7 @@ public class AreaCheckServlet extends HttpServlet {
 	}
 
 	private static boolean CheckSquare(double x, double y, double r) {
-		return x >= -r && x <= 0 && y <= 0 && y >= r;
+		return x >= -r && x <= 0 && y <= 0 && y >= -r;
 	}
 
 	private static boolean CheckQuarterCircle(double x, double y, double r) {
@@ -36,12 +36,6 @@ public class AreaCheckServlet extends HttpServlet {
 	}
 
 	private static boolean CheckTriangle(double x, double y, double r) {
-		double inTriangle1 = (0 - x) * (0 - r / 2);
-		double inTriangle2 = -(r / 2 - 0) * (0 - y);
-		double inTriangle3 = (r / 2 - x) * (r / 2 - 0) - (0 - r / 2) * (0 - y);
-		if (inTriangle1 <= 0 && inTriangle2 <= 0 && inTriangle3 <= 0) return true;
-		else {
-			return inTriangle1 > 0 && inTriangle2 >= 0 && inTriangle3 >= 0;
-		}
+		return x >= 0 && x <= r && y >= 0 && y <= r / 2 && (y <= -x/2 + r);
 	}
 }
