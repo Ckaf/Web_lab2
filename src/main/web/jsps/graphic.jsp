@@ -33,7 +33,9 @@
     <!--TRIANGLE-->
     <polygon class="triangle" points="150,150 270,150 150,90"></polygon>
     <!--QUARTER-->
-    <path class="quarter" d="M 150 270 Q 270 270 270 150 L 150 150 Z"></path>
+        <path class="quarter"
+              d="M 270 150 C 270 270, 150 270, 150 270 L 150 150 Z">
+        </path>
     <!--DOT-->
     <circle id="pointer" r="5" cx="150" cy="150" fill-opacity="0.7" fill="red" stroke="firebrick"
             visibility="hidden"></circle>
