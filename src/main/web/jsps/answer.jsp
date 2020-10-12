@@ -16,7 +16,7 @@
     </div>
     <div class="table-content">
 
-        <c:forEach var="obj" items="${list}">
+        <c:forEach var="obj" items="${deque}">
             <div class="table-row">
                 <div>${obj.getX()}</div>
                 <div>${obj.getY()}</div>
