@@ -14,7 +14,7 @@
 <body>
 <div class="error-container" style="text-align: center">
     <h2>Вы все сломали!</h2>
-    <button onclick="location.href = 'http://localhost:8080/Web_lab2-1.0-SNAPSHOT/index.jsp'">Пройдемте домой</button>
+    <button onclick="location.href = 'http://localhost:4527/Web_lab2-1.0-SNAPSHOT/index.jsp'">Пройдемте домой</button>
 </div>
 </body>
 </html>
