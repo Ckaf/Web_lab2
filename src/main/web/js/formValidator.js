@@ -20,8 +20,8 @@ document.getElementById("checkButton").onclick = function () {
             headers: {"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"},
         }).then(response => response.text()).then(function (serverAnswer) {
             setPointer(x, y, r);
-            location.href = 'http://localhost:8080/Web_lab2-1.0-SNAPSHOT/jsps/answer.jsp'
-            // document.getElementById("outputContainer").innerHTML = serverAnswer;
+            // location.href = 'http://localhost:8080/Web_lab2-1.0-SNAPSHOT/jsps/answer.jsp'
+            document.getElementById("outputContainer").innerHTML = "";
         }).catch(err => createNotification("Ошибка HTTP. Повторите попытку позже." + err));
     }
 };
