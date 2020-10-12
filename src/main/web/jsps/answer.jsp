@@ -23,5 +23,5 @@
                             "<div style=\"color: red\">Нет</div>"}
             </div>
     </div>
-    <button onclick="location.href = 'http://localhost:8080/Web_lab2-1.0-SNAPSHOT/index.jsp'">Пройдемте домой</button>
+    <button onclick="location.href = 'http://localhost:4527/Web_lab2-1.0-SNAPSHOT/index.jsp'">Пройдемте домой</button>
 </div>

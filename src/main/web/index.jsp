@@ -18,7 +18,7 @@
         <span class="outputStub notification">Результаты отсутствуют</span>
     </div>
     <button id="checkButton">Проверить</button>
-    <button onclick="location.href = 'http://localhost:8080/Web_lab2-1.0-SNAPSHOT/jsps/answer.jsp'">
+    <button onclick="location.href = 'http://localhost:4527/Web_lab2-1.0-SNAPSHOT/jsps/answer.jsp'">
         Перейти на страницу с результатами
     </button>
 </div>
