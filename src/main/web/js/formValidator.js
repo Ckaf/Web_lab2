@@ -20,7 +20,6 @@ document.getElementById("checkButton").onclick = function () {
             headers: {"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"},
         }).then(response => response.text()).then(function (serverAnswer) {
             setPointer(x, y, r);
-            document.getElementById("outputContainer").innerHTML = "";
             document.getElementById("answer-table").innerHTML = serverAnswer;
         }).catch(err => createNotification("Ошибка HTTP. Повторите попытку позже." + err));
     }
