@@ -15,7 +15,7 @@ public class ControllerServlet extends HttpServlet {
             getServletContext().getRequestDispatcher("/AreaCheck").forward(request, response);
         }
         catch (NumberFormatException | NullPointerException e) {
-            getServletContext().getRequestDispatcher("/error.jsp").forward(request, response);
+            getServletContext().getRequestDispatcher("/jsps/error.jsp").forward(request, response);
         }
     }
 
@@ -26,7 +26,7 @@ public class ControllerServlet extends HttpServlet {
 
     @Override
     protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doGet(request, response);
+    	getServletContext().setAttribute("deque", null);
     }
 
     @Override

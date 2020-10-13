@@ -1,6 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
 <head>
     <script src="js/jquery.js"></script>
     <meta charset="UTF-8">
@@ -20,6 +18,7 @@
 <div class="form-container">
     <jsp:include page="jsps/forms.jsp"/>
     <button id="checkButton">Проверить</button>
+    <button id="clearTableButton">Очистить таблицу</button>
     <div id="outputContainer">
         <span class="outputStub notification">Результаты отсутствуют</span>
     </div>
@@ -34,12 +33,10 @@
         });
     }
 </script>
-<%--<div class="answer">--%>
-<%--    <jsp:include page="jsps/answer.jsp"/>--%>
-<%--</div>--%>
 <script src="js/checkboxHandler.js"></script>
 <script src="js/formValidator.js"></script>
 <script src="js/graphicValidator.js"></script>
+<script src="js/clearTable.js"></script>
 
 </body>
 

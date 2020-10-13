@@ -15,7 +15,6 @@
         <div>Входит ли в ОДЗ?</div>
     </div>
     <div class="table-content">
-
         <c:forEach var="obj" items="${deque}">
             <div class="table-row">
                 <div>${obj.getX()}</div>
