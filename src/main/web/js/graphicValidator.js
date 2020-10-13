@@ -42,7 +42,8 @@ function clickPlotHandler(e) {
             headers: {"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"},
         }).then(response => response.text()).then(function (serverAnswer) {
             setPointer(xValue, yValue, rValue);
-            document.getElementById("outputContainer").innerHTML = serverAnswer;
+            document.getElementById("outputContainer").innerHTML = "";
+            document.getElementById("answer-table").innerHTML = serverAnswer;
         }).catch(err => createNotification("Ошибка HTTP. Повторите попытку позже." + err));
     }
 }
