@@ -7,8 +7,9 @@ function getXFromSVG(x, r) {
 function getYFromSVG(y, r) {
     return (y - 150) / 60 / 2 * -r;
 }
+
 function getRValue() {
-    const rText =document.querySelector("select[name=r_btn]").value;
+    const rText = document.querySelector("select[name=r_btn]").value;
     let rValue = parseFloat(rText);
 
     // if there is answer page without form
@@ -42,9 +43,11 @@ function clickPlotHandler(e) {
             headers: {"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"},
         }).then(response => response.text()).then(function (serverAnswer) {
             setPointer(xValue, yValue, rValue);
+            document.getElementById("outputContainer").innerHTML = "";
             document.getElementById("answer-table").innerHTML = serverAnswer;
         }).catch(err => createNotification("Ошибка HTTP. Повторите попытку позже." + err));
     }
 }
+
 plot.click(clickPlotHandler)
 

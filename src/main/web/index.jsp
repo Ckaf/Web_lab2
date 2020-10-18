@@ -19,26 +19,13 @@
     <jsp:include page="jsps/forms.jsp"/>
     <button id="checkButton">Проверить</button>
     <button id="clearTableButton">Очистить таблицу</button>
+    <div id="outputContainer">
+        <span class="outputStub notification"></span>
+    </div>
 </div>
-<div id="answer-table">
-</div>
-<script>
-    if (sessionStorage.getItem("is_reloaded")) {
-        const uncheck = document.getElementsByName('x_in');
-        for (let i = 0; i < uncheck.length; i++) {
-            if (uncheck[i].type === 'checkbox') {
-                uncheck[i].checked = false;
-            }
-        }
-        $.get("jsps/answer.jsp", function (data) {
-            document.getElementById("answer-table").innerHTML = data;
-        });
-    }
-</script>
+<div id="answer-table"></div>
+</body>
 <script src="js/checkboxHandler.js"></script>
+<script src="js/table.js"></script>
 <script src="js/formValidator.js"></script>
 <script src="js/graphicValidator.js"></script>
-<script src="js/clearTable.js"></script>
-
-</body>
-

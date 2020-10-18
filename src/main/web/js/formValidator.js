@@ -20,6 +20,7 @@ document.getElementById("checkButton").onclick = function () {
             headers: {"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"},
         }).then(response => response.text()).then(function (serverAnswer) {
             setPointer(x, y, r);
+            document.getElementById("outputContainer").innerHTML = "";
             document.getElementById("answer-table").innerHTML = serverAnswer;
         }).catch(err => createNotification("Ошибка HTTP. Повторите попытку позже." + err));
     }
@@ -40,7 +41,7 @@ function createNotification(message) {
     }
 }
 
-function setPointer(x, y ,r) {
+function setPointer(x, y, r) {
     let pointer = document.getElementById("pointer");
     pointer.style.visibility = "visible";
     pointer.setAttribute("cx", (x / r * 2 * 60 + 150));

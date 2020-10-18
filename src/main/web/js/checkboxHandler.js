@@ -35,7 +35,7 @@ function delegateFormClick(evt) {
 function checkBoxChanged() {
     if (this.checked) {
         disableCheckBoxes(this.id);
-            // document.getElementById("checkForm"));
+        // document.getElementById("checkForm"));
     } else if (!this.checked) {
         enableCheckBoxes(document.getElementById("checkForm"));
     }
@@ -94,6 +94,15 @@ function enableCheckBoxes(form) {
         const element = form.elements[i];
         if (element.tagName === "INPUT" && element.type === "checkbox" && !element.checked) {
             element.disabled = "";
+        }
+    }
+}
+
+function resetCheckBoxes() {
+    const uncheck = document.getElementsByName('x_in');
+    for (let i = 0; i < uncheck.length; i++) {
+        if (uncheck[i].type === 'checkbox') {
+            uncheck[i].checked = false;
         }
     }
 }
